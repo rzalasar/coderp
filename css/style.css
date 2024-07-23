@@ -1,246 +1,279 @@
 /**------FUENTE-----*/
 
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 
 
 /**-----RESEAT-----*/
 
-*{
-    margin: 0 
-    ;padding: 0;
+* {
+    margin: 0;
+    padding: 0;
 }
 
 
-body{
+body {
     font-family: "Oswald", sans-serif;
 }
 
 /**---------------------------HEADER----------------------------*/
 
-header nav img{
-    width: 100px
-    ;height: 100px
-    ;
+header nav img {
+    width: 100px;
+    height: 100px;
 }
 
-.menu{
-    background-color: black !important
-    ;
+.menu {
+    background-color: black !important;
 }
 
-header nav a{
+header nav a {
     color: red !important;
 }
 
-.letras-nav{
-    font-size: 20px
-    ;
+.letras-nav {
+    font-size: 25px;
 }
 
 
-.back-drop{
+.back-drop {
     background-color: rgba(26, 26, 26, 0.932);
 }
 
 
 /**------------------------MAIN----------------------------*/
 
-main{
-    background-color: black
-    ;color: red 
-    ;font-size: 20px;
+main {
+    background-color: black;
+    color: red;
+    font-size: 20px;
     ;
 }
 
 
-.hero{ 
-    width: 80% 
-    ;height: 300px
-    ;margin-left: 10%
-    ;background-image: url(../img/Panoramica\ 1.jpg)
-    ;background-position: center
-    ;background-size: contain
-    ;background-attachment: fixed
-    ;display: flex
-    ;flex-direction: column;
-    ;justify-content: center;
+.hero {
+    width: 100%;
+    height: 300px;
+    background-image: url(../img/Panoramica\ 1.jpg);
+    background-position: center;
+    background-size: contain;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
-.hero h2{
-    text-decoration: line-through 
-    ;text-align: center 
-    ;font-size: 30px
-    ;background-color: rgba(0, 0, 0, 0.644);
+.hero h2 {
+    text-decoration: line-through;
+    text-align: center;
+    font-size: 40px;
+    background-color: rgba(0, 0, 0, 0.808);
 }
 
-.hero p{
-    text-align: center 
-    ;font-size: 40px 
-    ;text-decoration: underline;
-    background-color: rgba(0, 0, 0, 0.644);
+.hero p {
+    text-align: center;
+    font-size: 50px;
+    text-decoration: underline;
+    background-color: rgba(0, 0, 0, 0.808);
 }
 
-.ofertas-cupones{
-    text-align: center
-    ;margin-top: 40px
-    ;margin-bottom: 40px
-    ;display: flex
-    ;flex-direction: column
-    ;justify-content: space-around
-    ;flex-wrap: wrap;
+
+.grid-container-oc h2 {
+    color: white;
+    background-color: red;
+    font-size: 40px;
+    text-align: center;
+    padding: 10px;
 }
 
-.ofertas-cupones div{
-    margin-top: 30px
-    ;margin-bottom: 30px
+.grid-container-oc a {
+    color: white;
+    background-color: red;
+    text-decoration: none;
+    font-size: 40px;
+    text-align: center;
     ;
+    padding: 5px;
 }
 
-.ofertas-cupones div h2{
-    font-size: 30px
-    ;background-color: red
-    ;color: white
-    ;
+.grid-container-oc a:hover {
+    color: red;
+    background: none;
+    border: 2px solid red;
 }
 
-.ofertas-cupones div h3{
-    font-size: 30px
-    ;background-color: red
-    ;color: white
-    ;
+.grid-container-oc p {
+    font-size: 30px;
+    text-align: center;
 }
 
-.ofertas-cupones p{
-    font-size: 25px
-    ;margin-top: 20px
-    ;margin-bottom: 30px
-    ;
+
+.grid-container-oc {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr 2fr 0.5fr;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    gap: 10px 10px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "titulo-of titulo-cu"
+        "oc-of oc-cu"
+        "oc-r oc-s";
 }
 
-.ofertas-cupones a{
-    text-decoration: none
-    ;font-size: 40px
-    ;color:white
-    ;background-color: red
-    ;padding-inline: 10px;
+.titulo-of {
+    grid-area: titulo-of;
 }
 
-.contenido-destacado h2{
-    text-align: center
-    ;color: white
-    ;background-color: red
-    ;font-size: 30px
-    ;margin-bottom: 60px;
+.titulo-cu {
+    grid-area: titulo-cu;
 }
 
-.contenido-destacado img{
-    width: 300px
-    ;height: 400px
-    ; 
+.oc-of {
+    grid-area: oc-of;
 }
 
-.contenido-destacado p{
-    font-size: 30px
-    ;background-color: rgba(255, 0, 0, 0.308)
-    ;
+.oc-cu {
+    grid-area: oc-cu;
 }
 
-.contenido-destacado .destacado-tarjetas div{
-    text-align: center
-    ;border: 4px red solid
-    ;margin-bottom: 200px
-    ;
+.oc-r {
+    grid-area: oc-r;
 }
 
-.destacado-tarjetas{
-    display: flex
-    ;justify-content: space-around
-    ;flex-wrap: wrap
-    ;
+.oc-s {
+    grid-area: oc-s;
 }
 
-.destacado-tarjetas div a{
-    display: flex
-    ;flex-direction: column
-    ;
+
+
+
+
+
+
+
+
+.contenido-destacado h2 {
+    text-align: center;
+    color: white;
+    background-color: red;
+    font-size: 40px;
+    padding: 10px;
+    margin-bottom: 60px;
 }
 
-.comprar{
-    color: white 
-    ;background-color: red 
-    ;text-decoration: none 
-    ;font-size: 30px 
-    ;margin-inline: 30px
-    ;margin-bottom: 2px
-    ;margin-top: 15px
-    ;
+.contenido-destacado img {
+    width: 300px;
+    height: 400px;
 }
 
-.añadir-carrito{
-    color: red
-    ;background-color: white
-    ;font-size: 25px
-    ;text-decoration: none
-    ;margin-inline: 50px
-    ;margin-bottom: 15px
-    ;
+.contenido-destacado p {
+    font-size: 30px;
+    background-color: rgba(255, 0, 0, 0.308);
+}
+
+.contenido-destacado .destacado-tarjetas div {
+    text-align: center;
+    border: 4px red solid;
+    margin-bottom: 200px;
+}
+
+.destacado-tarjetas {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.destacado-tarjetas div a {
+    display: flex;
+    flex-direction: column;
+}
+
+.comprar {
+    color: white;
+    background-color: red;
+    text-decoration: none;
+    font-size: 30px;
+    margin-inline: 30px;
+    margin-bottom: 2px;
+    margin-top: 15px;
+}
+
+.añadir-carrito {
+    color: red;
+    background-color: white;
+    font-size: 25px;
+    text-decoration: none;
+    margin-inline: 50px;
+    margin-bottom: 15px;
 }
 
 /**----------------FOOTER-------------------*/
 
-footer{
-    background-color: #e6e6e6 
-    ;color: red
-    ;
+footer {
+    background-color: #e6e6e6;
+    color: red;
 }
 
-footer h3{
+footer h3 {
     font-size: 20px;
     text-align: center;
 }
 
-footer h2{
+footer h2 {
     font-size: 20px;
     text-align: center;
 }
 
 
-footer img{
-    height: 50px 
-    ;width: 50px 
-    ;margin-inline: 30px;
+footer img {
+    height: 50px;
+    width: 50px;
+    margin-inline: 30px;
 }
 
-footer ul li{
+footer ul li {
     list-style: none;
 }
 
-footer ul{
-    display: flex
-    ;flex-direction: row
-    ;justify-content: center
-    ;
+footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 
-.grid-container-footer {  display: grid;
+.grid-container-footer {
+    display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 40px 60px;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
-    "titulo-redes-footer titulo-contacto-footer"
-    "redes contacto";
+        "titulo-redes-footer titulo-contacto-footer"
+        "redes contacto";
 }
 
-.titulo-redes-footer { grid-area: titulo-redes-footer; }
+.titulo-redes-footer {
+    grid-area: titulo-redes-footer;
+}
 
-.titulo-contacto-footer { grid-area: titulo-contacto-footer;}
+.titulo-contacto-footer {
+    grid-area: titulo-contacto-footer;
+}
 
-.redes { grid-area: redes; }
+.redes {
+    grid-area: redes;
+}
 
-.contacto { grid-area: contacto; }
+.contacto {
+    grid-area: contacto;
+}
 
 
 
@@ -261,150 +294,178 @@ footer ul{
 
 /**--------------MEDIA QUERIES-------------------*/
 
-@media screen and (max-width:991px) {
-    
+@media screen and (max-width:831px) {
+
     /**---------HEADER----------*/
 
-    header{
-        width: 100%;
-        position: static;
-    }
 
-    header h1{
-        font-size: 40px;
-    }
 
-    header nav ul li{
-        margin-top: 10px
-        ;padding: 0;
-    }
 
-    header nav ul li a{
-        font-size: 20px
-
-    }
-
-    .logo{
-        display: none;
-    }
-
-    .grid-container {  display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 50px 50px;
-        gap: 0px 0px;
-        grid-auto-flow: row;
-        grid-template-areas:
-            "titulo titulo"
-            "nav nav";
-    }
-    
-    .titulo { grid-area: titulo; }
-    
-    .nav { grid-area: nav; }
 
 
     /**--------------MAIN---------------------*/
 
-    .hero{ 
-        width: 100% 
-        ;height: 200px
-        ;margin-left: 0
-        ;background-position: top 
-        ;background-size: contain
+    .hero {
+        background: none;
+        height: 200px;
+
+    }
+
+    .hero h2 {
+        font-size: 35px;
+    }
+
+    .hero p {
+        font-size: 45px;
     }
 
 
 
-    .ofertas-cupones div h2{
-        font-size: 30px
-        ;background-color: red
-        ;color: white
-        ;
+
+    .grid-container-oc {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding: 10px;
     }
 
-    .ofertas-cupones div h3{
-        font-size: 30px
-        ;background-color: red
-        ;color: white
-        ;
-    }
-    
-    .ofertas-cupones p{
-        font-size: 20px
-        ;margin-top: 20px
-        ;margin-bottom: 30px
-        ;margin-inline: 20px
-        ;
+    .grid-container-oc h2 {
+        font-size: 30px;
+        padding: 5px;
     }
 
-    .ofertas-cupones a{
-        text-decoration: none
-        ;font-size: 25px
-        ;color:white
-        ;background-color: red
-        ;padding-inline: 10px;
-    }
-    
-    .contenido-destacado img{
-        width: 200px
-        ;height: 300px
-        ; 
+    .grid-container-oc p {
+        font-size: 20px;
     }
 
-    .contenido-destacado h2{
-        text-align: center
-        ;color: white
-        ;background-color: red
-        ;font-size: 30px
-        ;margin-bottom: 60px;
+    .grid-container-oc a {
+        font-size: 30px;
+        padding: 2.5px;
     }
 
-    .contenido-destacado p{
-        font-size: 20px
-        ;background-color: rgba(255, 0, 0, 0.308)
-        ;
+
+
+
+
+
+
+    .contenido-destacado img {
+        width: 200px;
+        height: 250px;
     }
 
-    .contenido-destacado .destacado-tarjetas div{
-        margin-bottom: 50px
-        ;
+    .contenido-destacado h2 {
+        text-align: center;
+        color: white;
+        background-color: red;
+        font-size: 30px;
+        padding: 5px;
+        margin-bottom: 60px;
     }
 
-    .comprar{
-        font-size: 20px 
-        ;margin-inline: 15px
-        ;margin-top: 15px
-        ;
+    .contenido-destacado p {
+        font-size: 20px;
+        background-color: rgba(255, 0, 0, 0.308);
     }
-    
-    .añadir-carrito{
-        font-size: 15px
-        ;margin-inline: 25px
-        ;margin-bottom: 15px
-        ;
+
+    .contenido-destacado .destacado-tarjetas div {
+        margin-bottom: 50px;
+    }
+
+    .comprar {
+        font-size: 20px;
+        margin-inline: 15px;
+        margin-top: 15px;
+    }
+
+    .añadir-carrito {
+        font-size: 15px;
+        margin-inline: 25px;
+        margin-bottom: 15px;
     }
 
     /**-----------------------FOOTER----------------------*/
 
-    footer h3{
-        font-size: 20px;
-
-    }
-    
-    footer h2{
+    footer h3 {
         font-size: 20px;
 
     }
 
-    
-    footer img{
-        height: 30px 
-        ;width: 30px 
-        ;margin-inline: 15px;
+    footer h2 {
+        font-size: 20px;
+
+    }
+
+
+    footer img {
+        height: 30px;
+        width: 30px;
+        margin-inline: 15px;
+    }
+
+    .grid-container-footer {
+        display: grid;
+        grid-template-rows: 25px 30px;
+    }
+
 }
 
-.grid-container-footer {  display: grid;
-    grid-template-rows: 25px 30px;
-}
+
+@media screen and (max-width:601px) {
+
+    /**-------------HEADER---------------*/
+
+
+
+
+
+
+
+
+
+
+    /**------------------MAIN--------------*/
+
+
+    .grid-container-oc {
+
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 5px;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        gap: 5px;
+        grid-template-areas:
+            "titulo-of"
+            "oc-of"
+            "oc-r"
+            "titulo-cu"
+            "oc-cu"
+            "oc-s";
+
+    }
+
+    .grid-container-oc h2 {
+        background: none;
+        font-size: 20px;
+        padding: 2.5px;
+    }
+
+    .grid-container-oc p {
+        font-size: auto;
+        margin: 30px;
+    }
+
+    .oc-s{
+        display: inline-block;
+    }
+
+
+    .grid-container-oc a {
+        background: none;
+        font-size: 20px;
+        ;
+    }
+
+
 
 }
