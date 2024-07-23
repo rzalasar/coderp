@@ -17,66 +17,30 @@ body{
 
 /**---------------------------HEADER----------------------------*/
 
-
-header{
-    background-color: black
-    ;width: 100%
-    ;position: sticky
-    ;top: 0;
-}
-
-header img{
-    width: 90px 
-    ;height: 90px 
-    ;margin-left: 25px;
-}
-
-
-header nav ul li a{ 
-    color: red 
-    ;text-decoration: none 
-    ;font-size: 30px 
-    ;text-align: center
-    ;margin: 20px
-    ;padding: 10px;
-}
-
-header nav ul li{
-    list-style: none
+header nav img{
+    width: 100px
+    ;height: 100px
     ;
 }
 
-header nav ul{
-    display: flex
-    ;flex-direction: row
-    ;justify-content: space-evenly
+.menu{
+    background-color: black !important
     ;
 }
 
-h1{
-    color:red 
-    ; font-size: 65px 
-    ;text-align: center 
+header nav a{
+    color: red !important;
+}
+
+.letras-nav{
+    font-size: 20px
     ;
 }
 
-.grid-container {  display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 90px 45px;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-        "logo titulo titulo ."
-        "nav nav nav nav";
+
+.back-drop{
+    background-color: rgba(26, 26, 26, 0.932);
 }
-
-    .titulo { grid-area: titulo; }
-
-    .logo { grid-area: logo; }
-
-    .nav { grid-area: nav; }
-
-
 
 
 /**------------------------MAIN----------------------------*/
@@ -106,13 +70,13 @@ main{
 .hero h2{
     text-decoration: line-through 
     ;text-align: center 
-    ;font-size: 50px
+    ;font-size: 30px
     ;background-color: rgba(0, 0, 0, 0.644);
 }
 
 .hero p{
     text-align: center 
-    ;font-size: 70px 
+    ;font-size: 40px 
     ;text-decoration: underline;
     background-color: rgba(0, 0, 0, 0.644);
 }
@@ -297,7 +261,7 @@ footer ul{
 
 /**--------------MEDIA QUERIES-------------------*/
 
-@media screen and (max-width:751px) {
+@media screen and (max-width:991px) {
     
     /**---------HEADER----------*/
 
@@ -349,30 +313,24 @@ footer ul{
         ;background-size: contain
     }
 
-    .hero h2{
-        font-size: 30px;
-    }
 
-    .hero p{
-        font-size: 40px;
-    }
 
     .ofertas-cupones div h2{
-        font-size: 20px
+        font-size: 30px
         ;background-color: red
         ;color: white
         ;
     }
 
     .ofertas-cupones div h3{
-        font-size: 20px
+        font-size: 30px
         ;background-color: red
         ;color: white
         ;
     }
     
     .ofertas-cupones p{
-        font-size: 15px
+        font-size: 20px
         ;margin-top: 20px
         ;margin-bottom: 30px
         ;margin-inline: 20px
@@ -397,7 +355,7 @@ footer ul{
         text-align: center
         ;color: white
         ;background-color: red
-        ;font-size: 20px
+        ;font-size: 30px
         ;margin-bottom: 60px;
     }
 
@@ -429,19 +387,19 @@ footer ul{
     /**-----------------------FOOTER----------------------*/
 
     footer h3{
-        font-size: 15px;
+        font-size: 20px;
 
     }
     
     footer h2{
-        font-size: 15px;
+        font-size: 20px;
 
     }
 
     
     footer img{
-        height: 25px 
-        ;width: 25px 
+        height: 30px 
+        ;width: 30px 
         ;margin-inline: 15px;
 }
 
