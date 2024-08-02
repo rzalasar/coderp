@@ -1,0 +1,76 @@
+/**----------------FOOTER-------------------*/
+
+footer {
+    background-color: #e6e6e6;
+    color: red;
+}
+
+footer h3 {
+    font-size: 20px;
+    text-align: center;
+}
+
+footer h2 {
+    font-size: 20px;
+    text-align: center;
+}
+
+
+footer img {
+    height: 50px;
+    width: 50px;
+    margin-inline: 30px;
+}
+
+footer ul li {
+    list-style: none;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+.grid-container-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 40px 60px;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "titulo-redes-footer titulo-contacto-footer"
+        "redes contacto";
+}
+
+.titulo-redes-footer {
+    grid-area: titulo-redes-footer;
+}
+
+.titulo-contacto-footer {
+    grid-area: titulo-contacto-footer;
+}
+
+.redes {
+    grid-area: redes;
+}
+
+.contacto {
+    grid-area: contacto;
+}
+
+
+
+
+
+/**------------------------FOOTER-CONTACTO----------------*/
+
+.footer-contacto {
+    height: 50px;
+    background-color: black;
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    background-color: $color-principal;
+}

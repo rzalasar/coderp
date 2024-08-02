@@ -1,0 +1,29 @@
+/**---------------------------HEADER----------------------------*/
+
+
+header{
+    nav{
+        div{
+            a{
+                color: $color-principal !important;
+                img{
+                    width: 100px;
+                    height: 100px;
+                }
+            }
+        }
+    }
+}
+
+.menu{
+    background-color: black !important;
+}
+
+.letras-nav{
+    font-size: 25px;
+}
+
+.back-drop{
+    background-color: rgba(26, 26, 26, 0.932);
+}
+

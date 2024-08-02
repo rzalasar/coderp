@@ -1,0 +1,430 @@
+@charset "UTF-8";
+/**------FUENTE-----*/
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+/**-----RESEAT-----*/
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: "Oswald", sans-serif; }
+
+.destacado-tarjetas div a {
+  display: flex;
+  flex-direction: column; }
+
+/**---------------------------HEADER----------------------------*/
+header nav div a {
+  color: red !important; }
+  header nav div a img {
+    width: 100px;
+    height: 100px; }
+
+.menu {
+  background-color: black !important; }
+
+.letras-nav {
+  font-size: 25px; }
+
+.back-drop {
+  background-color: rgba(26, 26, 26, 0.932); }
+
+/**------------------------MAIN----------------------------*/
+main {
+  background-color: black;
+  color: red;
+  font-size: 20px; }
+
+.hero {
+  width: 100%;
+  height: 300px;
+  background-image: url(../img/panoramica_1.jpg);
+  background-position: center;
+  background-size: contain;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap; }
+  .hero h1 {
+    text-decoration: line-through;
+    text-align: center;
+    font-size: 40px;
+    background-color: rgba(0, 0, 0, 0.808); }
+  .hero p {
+    text-align: center;
+    font-size: 50px;
+    text-decoration: underline;
+    background-color: rgba(0, 0, 0, 0.808); }
+
+.grid-container-oc {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 15px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.5fr 2fr 0.5fr;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+  gap: 10px 10px;
+  grid-auto-flow: row;
+  grid-template-areas: "titulo-of titulo-cu" "oc-of oc-cu" "oc-r oc-s"; }
+  .grid-container-oc h2 {
+    color: white;
+    background-color: red;
+    font-size: 40px;
+    text-align: center;
+    padding: 10px; }
+  .grid-container-oc p {
+    font-size: 30px;
+    text-align: center; }
+  .grid-container-oc a {
+    color: white;
+    background-color: red;
+    text-decoration: none;
+    font-size: 40px;
+    text-align: center;
+    padding: 5px; }
+    .grid-container-oc a:hover {
+      color: red;
+      background: none;
+      border: 2px solid red; }
+  .grid-container-oc .titulo-of {
+    grid-area: titulo-of; }
+  .grid-container-oc .titulo-cu {
+    grid-area: titulo-cu; }
+  .grid-container-oc .oc-of {
+    grid-area: oc-of; }
+  .grid-container-oc .oc-cu {
+    grid-area: oc-cu; }
+  .grid-container-oc .oc-r {
+    grid-area: oc-r; }
+  .grid-container-oc .oc-s {
+    grid-area: oc-s; }
+
+.contenido-destacado h2 {
+  text-align: center;
+  color: white;
+  background-color: red;
+  font-size: 40px;
+  padding: 10px;
+  margin-bottom: 60px; }
+
+.contenido-destacado img {
+  width: 300px;
+  height: 400px; }
+
+.contenido-destacado p {
+  font-size: 30px;
+  background-color: rgba(255, 0, 0, 0.308); }
+
+.destacado-tarjetas {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; }
+  .destacado-tarjetas div {
+    text-align: center;
+    border: 4px red solid;
+    margin-bottom: 200px; }
+    .destacado-tarjetas div p {
+      font-size: 30px;
+      background-color: rgba(255, 0, 0, 0.308); }
+    .destacado-tarjetas div .comprar {
+      color: white;
+      background-color: red;
+      text-decoration: none;
+      font-size: 30px;
+      margin-inline: 30px;
+      margin-bottom: 2px;
+      margin-top: 15px; }
+    .destacado-tarjetas div .añadir-carrito {
+      color: red;
+      background-color: white;
+      font-size: 25px;
+      text-decoration: none;
+      margin-inline: 50px;
+      margin-bottom: 15px; }
+
+/**-------------MAIN-CONTACTO-----------------*/
+h1 {
+  text-align: center;
+  margin-bottom: 40px; }
+
+.contacto-iconos {
+  display: flex;
+  flex: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap; }
+
+.div-contacto-iconos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px; }
+  .div-contacto-iconos a {
+    text-decoration: none;
+    color: red;
+    border: 2px solid red;
+    padding: 5px;
+    margin: 15px; }
+    .div-contacto-iconos a:hover {
+      background-color: red;
+      color: black; }
+
+.bi-instagram {
+  height: 200px;
+  width: 200px; }
+
+.bi-twitter-x {
+  height: 200px;
+  width: 200px; }
+
+.bi-tiktok {
+  height: 200px;
+  width: 200px; }
+
+.contacto-pages {
+  text-align: center;
+  font-size: 40px; }
+
+.bi-geo-alt {
+  height: 200px;
+  width: 200px; }
+
+.bi-envelope {
+  height: 200px;
+  width: 200px; }
+
+.bi-whatsapp {
+  height: 200px;
+  width: 200px; }
+
+/**----------------FOOTER-------------------*/
+footer {
+  background-color: #e6e6e6;
+  color: red; }
+
+footer h3 {
+  font-size: 20px;
+  text-align: center; }
+
+footer h2 {
+  font-size: 20px;
+  text-align: center; }
+
+footer img {
+  height: 50px;
+  width: 50px;
+  margin-inline: 30px; }
+
+footer ul li {
+  list-style: none; }
+
+footer ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
+.grid-container-footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 40px 60px;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "titulo-redes-footer titulo-contacto-footer" "redes contacto"; }
+
+.titulo-redes-footer {
+  grid-area: titulo-redes-footer; }
+
+.titulo-contacto-footer {
+  grid-area: titulo-contacto-footer; }
+
+.redes {
+  grid-area: redes; }
+
+.contacto {
+  grid-area: contacto; }
+
+/**------------------------FOOTER-CONTACTO----------------*/
+.footer-contacto {
+  height: 50px;
+  background-color: black;
+  color: black;
+  font-size: 30px;
+  text-align: center;
+  background-color: red; }
+
+/**--------------MEDIA QUERIES-------------------*/
+@media screen and (max-width: 831px) {
+  /**--------------MAIN---------------------*/
+  .hero {
+    background: none;
+    height: 200px; }
+    .hero h1 {
+      font-size: 35px; }
+    .hero p {
+      font-size: 45px; }
+  .grid-container-oc {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 10px; }
+    .grid-container-oc h2 {
+      font-size: 30px;
+      padding: 5px; }
+    .grid-container-oc p {
+      font-size: 20px; }
+    .grid-container-oc a {
+      font-size: 30px;
+      padding: 2.5px; }
+  .contenido-destacado p {
+    font-size: 20px; }
+  .contenido-destacado img {
+    width: 200px;
+    height: 250px; }
+  .contenido-destacado h2 {
+    text-align: center;
+    color: white;
+    background-color: red;
+    font-size: 30px;
+    padding: 5px;
+    margin-bottom: 60px; }
+  .destacado-tarjetas div {
+    margin-bottom: 50px; }
+  .comprar {
+    font-size: 20px;
+    margin-inline: 15px;
+    margin-top: 15px; }
+  .añadir-carrito {
+    font-size: 15px;
+    margin-inline: 25px;
+    margin-bottom: 15px; }
+  /**-----------------------FOOTER----------------------*/
+  footer h2 {
+    font-size: 20px; }
+  footer h3 {
+    font-size: 20px; }
+  footer img {
+    height: 30px;
+    width: 30px;
+    margin-inline: 15px; }
+  .grid-container-footer {
+    grid-template-rows: 25px 30px; } }
+
+@media screen and (max-width: 601px) {
+  .grid-container-oc {
+    display: flex;
+    flex-direction: column; }
+    .grid-container-oc h2 {
+      background: none;
+      font-size: auto;
+      padding: 2.5;
+      border: 2px solid red; }
+    .grid-container-oc p {
+      font-size: auto;
+      margin: 30px; }
+  .contenido-destacado h2 {
+    font-size: auto;
+    background: none;
+    border: 2px solid red; }
+  .destacado-tarjetas img {
+    height: 200px;
+    width: 150px; }
+  .comprar {
+    margin-top: 2px;
+    margin-inline: 4px; }
+  .añadir-carrito {
+    margin-bottom: 2px;
+    margin-inline: 6px; } }
+
+@media screen and (max-width: 451px) {
+  /**---------------MAIN--------------*/
+  .hero {
+    height: 150px;
+    border: 2px solid red; }
+    .hero h1 {
+      font-size: 25px; }
+    .hero p {
+      font-size: 35px; }
+  .grid-container-oc h2 {
+    font-size: auto; }
+  .grid-container-oc a {
+    background-color: red; }
+  .contenido-destacado h2 {
+    font-size: auto;
+    margin-inline: 10px; }
+  .destacado-tarjetas {
+    display: flex;
+    flex-wrap: wrap; }
+    .destacado-tarjetas img {
+      height: 150px;
+      width: 100px; }
+  /**------------MAIN-CONTACTO------------*/
+  h1 {
+    margin-bottom: 40px; }
+  .div-contacto-iconos {
+    margin-bottom: 30px; }
+    .div-contacto-iconos a {
+      border: 2px solid red;
+      padding: 5px;
+      margin: 15px; }
+      .div-contacto-iconos a:hover {
+        background-color: red;
+        color: black; }
+  .bi-instagram {
+    height: 100px;
+    width: 100px; }
+  .bi-twitter-x {
+    height: 100px;
+    width: 100px; }
+  .bi-tiktok {
+    height: 100px;
+    width: 100px; }
+  .contacto-pages {
+    text-align: center;
+    font-size: 30px;
+    margin: 20px; }
+  .bi-geo-alt {
+    height: 100px;
+    width: 100px; }
+  .bi-envelope {
+    height: 100px;
+    width: 100px; }
+  .bi-whatsapp {
+    height: 100px;
+    width: 100px; }
+  /**----------------FOOTER----------------*/
+  footer img {
+    height: 25px;
+    width: 25px;
+    margin-inline: 5px; }
+  footer h2 {
+    font-size: 15px; }
+  footer h3 {
+    font-size: 15px; }
+  footer ul {
+    justify-content: space-around; }
+  /**------------------------FOOTER-CONTACTO----------------*/
+  .footer-contacto {
+    height: 40px;
+    font-size: 20px; } }
+
+@media screen and (max-width: 281px) {
+  /**--------------MAIN---------------*/
+  .hero {
+    height: 80px;
+    border: none; }
+    .hero h1 {
+      font-size: 15px; }
+    .hero p {
+      font-size: 25px; }
+  /**-----------FOOTER--------------*/
+  footer img {
+    height: 15px;
+    width: 15px; }
+  footer h2 {
+    font-size: 10px; }
+  footer h3 {
+    font-size: 10px; }
+  .grid-container-footer {
+    grid-template-rows: 10px 20px; } }
