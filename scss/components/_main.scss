@@ -51,6 +51,7 @@ main {
         "titulo-of titulo-cu"
         "oc-of oc-cu"
         "oc-r oc-s";
+
     h2 {
         color: white;
         background-color: red;
@@ -58,11 +59,12 @@ main {
         text-align: center;
         padding: 10px;
     }
-    p{
+
+    p {
         font-size: 30px;
         text-align: center;
-    } 
-    
+    }
+
     a {
         color: white;
         background-color: red;
@@ -77,21 +79,27 @@ main {
             border: 2px solid red;
         }
     }
+
     .titulo-of {
         grid-area: titulo-of;
     }
+
     .titulo-cu {
         grid-area: titulo-cu;
     }
+
     .oc-of {
         grid-area: oc-of;
     }
+
     .oc-cu {
         grid-area: oc-cu;
     }
+
     .oc-r {
         grid-area: oc-r;
     }
+
     .oc-s {
         grid-area: oc-s;
     }
@@ -115,12 +123,9 @@ main {
     img {
         width: 300px;
         height: 400px;
+        object-fit: cover;
     }
 
-    p {
-        font-size: 30px;
-        background-color: rgba(255, 0, 0, 0.308);
-    }
 }
 
 .destacado-tarjetas {
@@ -130,7 +135,7 @@ main {
 
     div {
         text-align: center;
-        border: 4px $color-principal solid;
+        border: 8px $color-principal solid;
         margin-bottom: 200px;
 
         p {
@@ -141,16 +146,23 @@ main {
         a {
             @extend %flex;
         }
+
         .comprar {
             color: white;
             background-color: $color-principal;
             text-decoration: none;
             font-size: 30px;
             margin-inline: 30px;
-            margin-bottom: 2px;
+            margin-bottom: 6px;
             margin-top: 15px;
+
+            &:hover {
+                background-color: black;
+                color: $color-principal;
+                border: 2px red solid;
+            }
         }
-        
+
         .añadir-carrito {
             color: $color-principal;
             background-color: white;
@@ -158,8 +170,14 @@ main {
             text-decoration: none;
             margin-inline: 50px;
             margin-bottom: 15px;
+
+            &:hover {
+                background-color: black;
+                color: $color-principal;
+                border: 2px red solid;
+            }
         }
-        
+
     }
 }
 
@@ -236,4 +254,38 @@ h1 {
 .bi-whatsapp {
     height: 200px;
     width: 200px;
+}
+
+/**----------------MAIN-CARRITO------------------*/
+
+.carrito-m {
+    height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/**-------------MAIN-TALLES------------------*/
+
+.talles-tp {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+
+    h2 {
+        font-size: 40px;
+        text-align: center;
+        margin-bottom: 30px;
+        border: 4px solid red;
+        padding: 8px;
+        display: inline-block;
+    }
+
+    p {
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 40px;
+    }
 }

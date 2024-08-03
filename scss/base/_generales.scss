@@ -14,9 +14,10 @@
 body {
     font-family: "Oswald", sans-serif;}
 
+    
+
     $color-principal: red;
     
     %flex{
         display: flex;
-        flex-direction: column;
-    }
+        flex-direction: column;}
