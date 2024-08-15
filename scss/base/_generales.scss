@@ -14,10 +14,23 @@
 body {
     font-family: "Oswald", sans-serif;}
 
-    
+    //!VARIABLE
+    $colores: red, white, black;
 
+    //!LISTA
     $color-principal: red;
-    
+
+    //!EXTEND
     %flex{
         display: flex;
-        flex-direction: column;}
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;}
+
+
+    //!MIXIN
+    @mixin text ($decoration, $align, $font){
+        text-decoration: $decoration;
+        text-align: $align;
+        font-size: $font;
+    }
