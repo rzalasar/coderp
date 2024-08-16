@@ -305,7 +305,7 @@ footer ul {
   font-size: 30px;
   text-align: center;
   background-color: red;
-  margin-top: 100px; }
+  padding: 10px; }
 
 /**--------------MEDIA QUERIES-------------------*/
 @media screen and (max-width: 831px) {
@@ -408,12 +408,16 @@ footer ul {
   .contenido-destacado h2 {
     font-size: auto;
     margin-inline: 10px; }
+  .contenido-destacado img {
+    height: 250px;
+    width: 250px; }
   .destacado-tarjetas {
     display: flex;
     flex-wrap: wrap; }
-    .destacado-tarjetas img {
-      height: 150px;
-      width: 100px; }
+    .destacado-tarjetas div {
+      border: 4px red solid; }
+    .destacado-tarjetas p {
+      font-size: 20px; }
   /**------------MAIN-CONTACTO------------*/
   h1 {
     margin-bottom: 40px; }

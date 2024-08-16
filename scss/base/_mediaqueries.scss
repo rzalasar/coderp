@@ -185,15 +185,20 @@
             font-size: auto;
             margin-inline: 10px;
         }
+        img {
+            height: 250px;
+            width: 250px;
+        }
     }
 
     .destacado-tarjetas {
         display: flex;
         flex-wrap: wrap;
-
-        img {
-            height: 150px;
-            width: 100px;
+        div{
+            border: 4px red solid;
+        }
+        p{
+        font-size: 20px;
         }
     }
 
