@@ -62,17 +62,21 @@ main {
     }
 
     a {
-        color: white;
-        background-color: red;
+        color: red;
+        border: 2px red solid;
         text-decoration: none;
         font-size: 40px;
         text-align: center;
         padding: 5px;
+        margin-inline: 20px;
+        transition-duration: 0.5s;
+        transition-timing-function: ease-out;
 
         &:hover {
-            color: red;
-            background: none;
-            border: 2px solid red;
+            transform: scale(1.1);
+            box-shadow: 14px 14px 20px 0px rgba(194, 0, 0, 0.459);
+            color: white;
+            background-color: red;
         }
     }
 
@@ -117,10 +121,11 @@ main {
     }
 
     img {
-        width: 300px;
-        height: 400px;
+        width: 260px;
+        height: 340px;
         object-fit: cover;
     }
+    
 
 }
 
@@ -133,6 +138,11 @@ main {
         text-align: center;
         border: 8px $color-principal solid;
         margin-bottom: 200px;
+        transition: 1s;
+        &:hover{
+            transform: scale(1.1);
+            box-shadow: 14px 14px 20px 0px rgba(194, 0, 0, 0.459);
+        }
 
         p {
             font-size: 30px;
@@ -144,33 +154,35 @@ main {
         }
 
         .comprar {
-            color: white;
-            background-color: $color-principal;
+            color: red;
+            border: red solid 2px;
             text-decoration: none;
             font-size: 30px;
             margin-inline: 30px;
             margin-bottom: 6px;
             margin-top: 15px;
+            transition-duration: 1s;
+            transition-timing-function: ease-out;
 
             &:hover {
-                background-color: black;
-                color: $color-principal;
-                border: 2px red solid;
+                background-color: red;
+                color: white;
             }
         }
 
         .añadir-carrito {
             color: $color-principal;
-            background-color: white;
+            border: red 2px solid;
             font-size: 25px;
             text-decoration: none;
             margin-inline: 50px;
             margin-bottom: 15px;
-
+            transition-duration: 1s;
+            transition-timing-function: ease-out;
             &:hover {
-                background-color: black;
-                color: $color-principal;
-                border: 2px red solid;
+                background-color: yellow;
+                color: red;
+                
             }
         }
 
@@ -205,8 +217,13 @@ h1 {
         border: 2px solid $color-principal;
         padding: 5px;
         margin: 15px;
+        transition-duration: 1s;
+        transition-timing-function: ease-out;
+        ;
 
         &:hover {
+            transform: scale(1.2);
+            box-shadow: 14px 14px 20px 0px rgba(194, 0, 0, 0.459);
             background-color: $color-principal;
             color: black
         }
@@ -255,10 +272,18 @@ h1 {
 /**----------------MAIN-CARRITO------------------*/
 
 .carrito-m {
-    height: 800px;
+    height: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.form-label{
+    font-size: 25px;
+}
+
+.btn-outline-danger{
+    font-size: 25px;
 }
 
 /**-------------MAIN-TALLES------------------*/

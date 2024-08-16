@@ -8,7 +8,8 @@
   padding: 0; }
 
 body {
-  font-family: "Oswald", sans-serif; }
+  font-family: "Oswald", sans-serif;
+  background-color: black; }
 
 .hero, .destacado-tarjetas div a {
   display: flex;
@@ -18,10 +19,12 @@ body {
 
 /**---------------------------HEADER----------------------------*/
 header nav div a {
+  padding-inline: 20px !important;
   color: red !important; }
-  header nav div a img {
-    width: 100px;
-    height: 100px; }
+
+header nav div img {
+  width: 100px;
+  height: 100px; }
 
 .menu {
   background-color: black !important; }
@@ -78,16 +81,20 @@ main {
     font-size: 30px;
     text-align: center; }
   .grid-container-oc a {
-    color: white;
-    background-color: red;
+    color: red;
+    border: 2px red solid;
     text-decoration: none;
     font-size: 40px;
     text-align: center;
-    padding: 5px; }
+    padding: 5px;
+    margin-inline: 20px;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out; }
     .grid-container-oc a:hover {
-      color: red;
-      background: none;
-      border: 2px solid red; }
+      transform: scale(1.1);
+      box-shadow: 14px 14px 20px 0px rgba(194, 0, 0, 0.459);
+      color: white;
+      background-color: red; }
   .grid-container-oc .titulo-of {
     grid-area: titulo-of; }
   .grid-container-oc .titulo-cu {
@@ -110,8 +117,8 @@ main {
   margin-bottom: 60px; }
 
 .contenido-destacado img {
-  width: 300px;
-  height: 400px;
+  width: 260px;
+  height: 340px;
   object-fit: cover; }
 
 .destacado-tarjetas {
@@ -121,33 +128,39 @@ main {
   .destacado-tarjetas div {
     text-align: center;
     border: 8px red solid;
-    margin-bottom: 200px; }
+    margin-bottom: 200px;
+    transition: 1s; }
+    .destacado-tarjetas div:hover {
+      transform: scale(1.1);
+      box-shadow: 14px 14px 20px 0px rgba(194, 0, 0, 0.459); }
     .destacado-tarjetas div p {
       font-size: 30px;
       background-color: rgba(255, 0, 0, 0.308); }
     .destacado-tarjetas div .comprar {
-      color: white;
-      background-color: red;
+      color: red;
+      border: red solid 2px;
       text-decoration: none;
       font-size: 30px;
       margin-inline: 30px;
       margin-bottom: 6px;
-      margin-top: 15px; }
+      margin-top: 15px;
+      transition-duration: 1s;
+      transition-timing-function: ease-out; }
       .destacado-tarjetas div .comprar:hover {
-        background-color: black;
-        color: red;
-        border: 2px red solid; }
+        background-color: red;
+        color: white; }
     .destacado-tarjetas div .añadir-carrito {
       color: red;
-      background-color: white;
+      border: red 2px solid;
       font-size: 25px;
       text-decoration: none;
       margin-inline: 50px;
-      margin-bottom: 15px; }
+      margin-bottom: 15px;
+      transition-duration: 1s;
+      transition-timing-function: ease-out; }
       .destacado-tarjetas div .añadir-carrito:hover {
-        background-color: black;
-        color: red;
-        border: 2px red solid; }
+        background-color: yellow;
+        color: red; }
 
 /**-------------MAIN-CONTACTO-----------------*/
 h1 {
@@ -170,8 +183,12 @@ h1 {
     color: red;
     border: 2px solid red;
     padding: 5px;
-    margin: 15px; }
+    margin: 15px;
+    transition-duration: 1s;
+    transition-timing-function: ease-out; }
     .div-contacto-iconos a:hover {
+      transform: scale(1.2);
+      box-shadow: 14px 14px 20px 0px rgba(194, 0, 0, 0.459);
       background-color: red;
       color: black; }
 
@@ -205,10 +222,16 @@ h1 {
 
 /**----------------MAIN-CARRITO------------------*/
 .carrito-m {
-  height: 800px;
+  height: 300px;
   display: flex;
   align-items: center;
   justify-content: center; }
+
+.form-label {
+  font-size: 25px; }
+
+.btn-outline-danger {
+  font-size: 25px; }
 
 /**-------------MAIN-TALLES------------------*/
 .talles-tp {
@@ -281,7 +304,8 @@ footer ul {
   color: black;
   font-size: 30px;
   text-align: center;
-  background-color: red; }
+  background-color: red;
+  margin-top: 100px; }
 
 /**--------------MEDIA QUERIES-------------------*/
 @media screen and (max-width: 831px) {
@@ -341,27 +365,28 @@ footer ul {
 
 @media screen and (max-width: 741px) {
   .talles-tp p {
-    margin: 5%; } }
+    margin: 5%; }
+  .contenido-destacado img {
+    height: 300px;
+    width: 250px; } }
 
 @media screen and (max-width: 601px) {
   .grid-container-oc {
     display: flex;
     flex-direction: column; }
     .grid-container-oc h2 {
-      background: none;
+      background-color: red;
       font-size: auto;
-      padding: 2.5;
-      border: 2px solid red; }
+      padding: 2.5; }
     .grid-container-oc p {
       font-size: auto;
       margin: 30px; }
   .contenido-destacado h2 {
     font-size: auto;
-    background: none;
-    border: 2px solid red; }
+    background-color: red; }
   .destacado-tarjetas img {
-    height: 200px;
-    width: 150px; }
+    height: 300px;
+    width: 250px; }
   .comprar {
     margin-top: 2px;
     margin-inline: 4px; }
@@ -380,8 +405,6 @@ footer ul {
       font-size: 35px; }
   .grid-container-oc h2 {
     font-size: auto; }
-  .grid-container-oc a {
-    background-color: red; }
   .contenido-destacado h2 {
     font-size: auto;
     margin-inline: 10px; }
